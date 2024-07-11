@@ -2,16 +2,15 @@
 int main(){
 
 // Que.WAP to print half of triangle with *.
-    int n;
-    printf("n :");
-    scanf("%d ",&n);
-     for(int i=1;i<=n;i++){    //no of rows>i
-         for(int j=1;j<=i;j++){     //no of column>j
-             printf("%d ",j);
-         }
-         printf("\n");
-     }
-
+    // int n;
+    // printf("n :");
+    // scanf("%d ",&n);
+    //  for(int i=1;i<=n;i++){    //no of rows>i
+    //      for(int j=1;j<=i;j++){     //no of column>j
+    //          printf("%d ",j);
+    //      }
+    //      printf("\n");
+    //  }
 //Que.triangle pattern
     // int n;
     // printf("n :");
@@ -187,27 +186,211 @@ int main(){
 //                        *****
 //                         ***
 //                          *
-    int n;
-    printf("n :");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        if(i==n/2+1){
-            for(int j=1;j<=n;j++){
-                printf("*");
-            }
-        }
-        else{
-            if(i<=n/2 || i==(n+3-i)){
-                for(int j=1;j<=(n/2)+(1-i);j++){
-                    printf(" ");
-                }
-                for(int k=1;k<=2*i-1;k++){
-                    printf("*");
-                }
-            }
-        }
-        printf("\n");
-    }
+    // int n;
+    // printf("n :");
+    // scanf("%d",&n);
+    // for(int i=1;i<=n;i++){
+    //     int sp=n/2;
+    //     int st=1;
+    //     int m=n/2+1;
+    //     for(int i=1;i<=n;i++){
+    //         for(int j=1;j<=sp;j++){  //spaces
+    //             printf(" ");
+    //         }
+    //         for(int k=1;k<=st;k++){  //stars
+    //             printf("*");
+    //         }
+    //         if(i<m){
+    //             sp--;
+    //             st+=2;
+    //         }
+    //         else{
+    //             sp++;
+    //             st-=2;
+    //         } 
+    //         printf("\n");
+    //     }
+    // }
+
+//Q.  WAP to print  ***********   star pyramid mast.
+//                  ***** *****
+//                  ****   ****
+//                  ***     ***
+//                  **       **
+//                  *         *
+//     int n;
+//     printf("n :");
+//     scanf("%d",&n);
+//     for(int f=1;f<=2*n-1;f++){
+//         printf("*");
+//     }
+//     printf("\n");
+//     int  sp=1;
+//     int st=n-1;
+//     for(int i=1;i<=n;i++){
+//         for(int l=1;l<=st;l++){
+//             printf("*");
+//         }
+//         for(int j=1;j<=sp;j++){
+//                printf(" ");
+//         }
+//         for(int k=1;k<=st;k++){
+//             printf("*");
+//         }
+//         st--;
+//         sp+=2;
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+//Q. WAP to print 1234567     triangle mast.
+//                123 567
+//                12   67
+//                1     7
+    // int n;
+    // printf("n :");
+    // scanf("%d",&n);
+    // for(int f=1;f<=2*n-1;f++){
+    //     printf("%d ",f);
+    // }
+    // printf("\n");
+    // int a=n-1;
+    // int sp=1;
+    // for(int i=1;i<=n-1;i++){
+    //     for(int j=1;j<=a;j++){
+    //         printf("%d ",j);
+    //     }
+    //     a--;
+    //     for(int k=1;k<=sp;k++){
+    //         printf("  ");
+    //     }
+    //     sp+=2;
+    //     int b=2*n-1;
+    //     for(int l=n+i;l<=b;l++){
+    //         printf("%d ",l);
+    //     }
+    //     b--;
+    //     printf("\n");
+    // }
+    //Q. WAP to print   1234321   triangle mast.
+    //                  123 321
+    //                  12   21
+    //                  1     1
+    // int n;
+    // printf("n :");
+    // scanf("%d",&n);
+    // int p=n;
+    // for(int f=1;f<=p;f++){
+    //     printf("%d",f);
+    // }
+    // p++;     
+    // for(int g=p-2;g>=1;g--){
+    //     printf("%d",g);
+    // }
+    // p--;
+    // printf("\n");
+    // int d=n-1;
+    // int sp=1;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=d;j++){
+    //         printf("%d",j);
+    //     }
+    //     for(int k=1;k<=sp;k++){
+    //         printf(" ");
+    //     }
+    //     sp+=2;
+    //     for(int l=d;l>=1;l--){
+    //         printf("%d",l);
+    //     }
+    //     d--;
+    //     printf("\n");
+    // }
+
+//Q. WAP to print     4 4 4 4 4 4 4   squar in squar.
+//                    4 3 3 3 3 3 4
+//                    4 3 2 2 2 3 4
+//                    4 3 2 1 2 3 4 
+//                    4 3 2 2 2 3 4  
+//                    4 3 3 3 3 3 4 
+//                    4 4 4 4 4 4 4 
+    // int n;
+    // printf("n :");
+    // scanf("%d",&n);
+    // int a=n;
+    // for(int i=1;i<=2*n-1;i++){
+    //     for(int j=n;j>=a;j--){
+    //         printf("%d",j);
+    //     }
+    //     int b=2*n-3;
+    //     for(int k=1;k<=b;k++){
+    //         printf("%d",a);
+    //     }
+    //     b-=2;
+    //     for(int w=a;w<=n;w++){
+    //         printf("%d",w);
+    //     }
+    //     printf("\n");
+    //     for(int m=n;m>=1;m--){
+    //         printf("%d",i);
+    //     }
+    //     for(int g=2;g<=n;g++){
+    //         printf("%d",g);
+    //     }
+    //     printf("\n");
+    //     int s=2;
+    //     for(int y=n;y>=s;y--){
+    //         printf("%d",y);
+    //     }
+    //     int r=1;
+    //     for(int l=1;l<=r;l++){
+    //         printf("%d",s);
+    //     }
+    //     s++;
+    //     r+=2;
+    //     for(int q=a;q<=n;q++){
+    //         printf("%d",q);
+    //     }
+    //     a--;
+    //     printf("\n");
+    // }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,8 +418,7 @@ int main(){
        //           **....n-1
        //           . . .n-2
        //           *
-
-// WAP to print 1 2 3 4 ..n
+//Q. WAP to print 1 2 3 4 ..n
 //              1 2 .n-1
 //              . . n-2
 //              1
@@ -514,5 +696,5 @@ int main(){
 
     
 
-    return 0;
-}
+     return 0;
+ }
