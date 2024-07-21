@@ -314,46 +314,46 @@ int main(){
 //                    4 3 2 2 2 3 4  
 //                    4 3 3 3 3 3 4 
 //                    4 4 4 4 4 4 4 
-    // int n;
-    // printf("n :");
-    // scanf("%d",&n);
-    // int a=n;
-    // for(int i=1;i<=2*n-1;i++){
-    //     for(int j=n;j>=a;j--){
-    //         printf("%d",j);
-    //     }
-    //     int b=2*n-3;
-    //     for(int k=1;k<=b;k++){
-    //         printf("%d",a);
-    //     }
-    //     b-=2;
-    //     for(int w=a;w<=n;w++){
-    //         printf("%d",w);
-    //     }
-    //     printf("\n");
-    //     for(int m=n;m>=1;m--){
-    //         printf("%d",i);
-    //     }
-    //     for(int g=2;g<=n;g++){
-    //         printf("%d",g);
-    //     }
-    //     printf("\n");
-    //     int s=2;
-    //     for(int y=n;y>=s;y--){
-    //         printf("%d",y);
-    //     }
-    //     int r=1;
-    //     for(int l=1;l<=r;l++){
-    //         printf("%d",s);
-    //     }
-    //     s++;
-    //     r+=2;
-    //     for(int q=a;q<=n;q++){
-    //         printf("%d",q);
-    //     }
-    //     a--;
-    //     printf("\n");
-    // }
+    int n;
+    printf("n :");
+    scanf("%d",&n);
+    int a=n;
+    for(int i=1;i<=2*n-1;i++){
+        for(int j=n;j>=a;j--){
+            printf("%d",j);
+        }
+        int b=2*n-3;
+        for(int k=1;k<=b;k++){
+            printf("a");
+        }
+        b-=2;
+        for(int w=a;w<=n;w++){
+            printf("%d",w);
+        }
+        printf("\n");
+        for(int m=n;m>=1;m--){
+            printf("%d",m);
+        }
+        for(int g=2;g<=n;g++){
+            printf("%d",g);
+        }
+        printf("\n");
+        int s=2;
+        for(int y=n;y>=s;y--){
+            printf("%d",y);
+        }
+        int r=1;
+        for(int l=1;l<=r;l++){
+            printf("s");
+        }
+        s++;
+        r+=2;
+        for(int q=a;q<=n;q++){
+            printf("%d",q);
+        }
+        a--;
+        printf("\n");
+    }
     
 
 
