@@ -10,33 +10,34 @@ int main(){
         int r;
         scanf(" %d",&r);
     }
+    printf("\n");
     int p,q,r,h;
     for(int j=1;j<=n;j++){
         if(p>=q && p>=r){
             if(q>=r){
-                h=(p-r);
+                printf("%d",(p-r));
             }
             else{
-                h=(p-q);
+                printf("%d",(p-q));
             }
         }
         if(q>=p && q>=r){
             if(p>=r){
-                h=(q-r);
+                printf("%d",(q-r));
             }
             else{
-                h=(q-p);
+                printf("%d",(q-p));
             }
         }
         if(r>=q && r>=p){
             if(q>=p){
-                h=(r-p);
+                printf("%d",(r-p));
             }
             else{
-                h=(r-q);
+                printf("%d",(r-q));
             }
         }
-        printf("%d\n",h);
+        printf("\n");
     }
     return 0;
 }
