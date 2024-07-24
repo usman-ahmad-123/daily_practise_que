@@ -3,9 +3,10 @@ int main(){
   int n,k;   // 1<=k<=n<=50
   scanf("%d %d",&n,&k);
   for(int i=1;i<=n;i++){
-    int a;
+    int a=0;
     scanf("%d ",&a); // 0<=a<=100
   }
+  if(i==k)
   
 
   return 0;
